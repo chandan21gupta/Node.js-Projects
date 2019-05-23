@@ -40,7 +40,7 @@ app.get('/weather',(req,res) => {
         if(!data){
             return res.send({error : 'Enter valid location'});
         }
-        return res.send({data:data});
+        return res.send({data:data.temp});
     });
     
 });
